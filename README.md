@@ -17,7 +17,7 @@ In the main method of the App class, two people must be created and the values �
 ### Part 2:
 
 Add two new attributes to the Person class. 
-- An attribute that represents the country of birth of the person (of type String) and another that identifies the gender of the person, which must be represented as a char with values ​​'H', 'M', 'O'.
+- An attribute that represents the country of birth of the person (of type String) and another that identifies the gender of the person, which must be represented as a char with values ​​'M', 'F', 'O'.
 - Modify the constructor of the Person class so that it initializes these two new attributes.
 - Modify the print method of the Person class so that it displays the values ​​of the new attributes on the screen.
   
