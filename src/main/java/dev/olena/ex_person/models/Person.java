@@ -14,15 +14,20 @@ public class Person {
     private String lastName;
     private String id;
     private int yearOfBirth;
+    private String countryOfBirth;
+    private char gender;
 
     
-    public Person(String name, String lastName, String id, int yearOfBirth) {
+    public Person(String name, String lastName, String id, int yearOfBirth, String countryOfBirth, char gender) {
         this.name = name;
         this.lastName = lastName;
         this.id = id;
         this.yearOfBirth = yearOfBirth;
+        this.countryOfBirth = countryOfBirth;
+        this.gender = gender;
     }
-    
+
+
     public String getName() {
         return name;
     }
@@ -38,18 +43,31 @@ public class Person {
     public int getYearOfBirth() {
         return yearOfBirth;
     }
-
-
-    // public void print() {
-    //     System.out.println("Person name: " + name + ", last name: " + lastName + ", DNI: " + id + ", year of birth: " + yearOfBirth );
-    // }
-
+    
+    public String getCountryOfBirth() {
+        return countryOfBirth;
+    }
+    
+    public char getGender() {
+        return gender;
+    }
+    
+    
     public void print() {
         System.out.println(this.toString());
     }
-
+    
     @Override
     public String toString() {
-        return "Person name: " + name + ", last name: " + lastName + ", DNI: " + id + ", year of birth: " + yearOfBirth;
+        return "Person name: " + name + 
+        ", last name: " + lastName + 
+        ", DNI: " + id + 
+        ", year of birth: " + yearOfBirth +
+        ", country of birth: " + countryOfBirth +
+        ", gender: " + gender;
     }
+    
+    // public void print() {
+    //     System.out.println("Person name: " + name + ", last name: " + lastName + ", DNI: " + id + ", year of birth: " + yearOfBirth );
+    // }
 }
