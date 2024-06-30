@@ -16,7 +16,6 @@ public class Person {
     private int yearOfBirth;
     private String countryOfBirth;
     private char gender;
-
     
     public Person(String name, String lastName, String id, int yearOfBirth, String countryOfBirth, char gender) {
         this.name = name;
@@ -26,7 +25,6 @@ public class Person {
         this.countryOfBirth = countryOfBirth;
         this.gender = gender;
     }
-
 
     public String getName() {
         return name;
@@ -67,7 +65,7 @@ public class Person {
         ", gender: " + gender;
     }
     
-    // public void print() {
-    //     System.out.println("Person name: " + name + ", last name: " + lastName + ", DNI: " + id + ", year of birth: " + yearOfBirth );
-    // }
 }
+// public void print() {
+//     System.out.println("Person name: " + name + ", last name: " + lastName + ", DNI: " + id + ", year of birth: " + yearOfBirth );
+// }
